@@ -67,7 +67,7 @@ namespace Spiderweb.Device.Weighter
                 if (WeighterProtocol.GetWeight(weighterString, ref curWeight))
                 {
                     this.WeighterRawData = weighterString;
-                    OnSendMessage($"仪表显示重量：{curWeight}Kg/{WeighterRawData}");
+                    //OnSendMessage($"仪表显示重量：{curWeight}Kg/{WeighterRawData}");
                     OnReceiveData(curWeight);
                     weighterString = "";
                 }

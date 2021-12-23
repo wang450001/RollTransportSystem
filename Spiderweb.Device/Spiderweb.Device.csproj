@@ -35,6 +35,10 @@
       <HintPath>..\..\..\libs\Communication.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.OPCAutomation">
+      <HintPath>..\..\..\libs\Interop.OPCAutomation.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Keyence.AutoID.SDK">
       <HintPath>..\..\..\libs\Keyence.AutoID.SDK.dll</HintPath>
     </Reference>
@@ -77,6 +81,10 @@
       <Project>{40157122-48ea-4be8-ba46-edd4efd5f184}</Project>
       <Name>Spiderweb.Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Opc\" />
+    <Folder Include="Plc\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

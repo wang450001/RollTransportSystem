@@ -54,6 +54,8 @@ namespace Spiderweb.Device.Print
                 // 无条码数据时，设置条码控件不可见
                 XRControl ctrlBar = report.FindControl("label16", true);
                 if (ctrlBar != null) ctrlBar.Visible = true;
+                XRControl ctrlRoll = report.FindControl("rollOID", true);
+                if (ctrlRoll != null) ctrlRoll.Visible = true;
 
                 //report.Print(PrinterName);
                 report.PrintAsync(PrinterName);
